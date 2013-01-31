@@ -1,3 +1,9 @@
 [user]
 	name = salrepe
 	email = salva@peertransfer.com
+
+[merge]
+  tool = opendiff
+
+[branch "master"]
+  rebase = true
