@@ -1,0 +1,71 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="gentoo"
+
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
+
+# Comment this out to disable weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
+
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+# COMPLETION_WAITING_DOTS="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git textmate ruby)
+
+source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+alias core="cd ~/peertransfer/code/platform/apps/core"
+alias operations="cd ~/peertransfer/code/platform/apps/operations"
+alias payschool="cd ~/peertransfer/code/platform/apps/payschool"
+alias dashboard="cd ~/peertransfer/code/platform/apps/dashboards"
+alias hedge_oanda="cd ~/peertransfer/code/platform/apps/hedge_oanda"
+alias salesforce="cd ~/peertransfer/code/platform/apps/salesforce"
+alias filer="cd ~/peertransfer/code/platform/apps/filer"
+alias api="cd ~/peertransfer/code/platform/apps/api"
+alias exchange="cd ~/peertransfer/code/platform/apps/exchange"
+alias messages="cd ~/peertransfer/code/platform/apps/messages"
+alias baywatch="cd ~/peertransfer/code/platform/apps/baywatch"
+alias webhook="cd ~/peertransfer/code/platform/apps/webhook"
+alias watchlist="cd ~/peertransfer/code/platform/apps/watchlist_lexisnexis"
+alias lounge="cd ~/peertransfer/code/platform/apps/lounge"
+alias health_manager="cd ~/peertransfer/code/platform/apps/health_manager"
+alias cookbooks="cd ~/peertransfer/code/platform/infra/cookbooks"
+alias bank_router="cd ~/peertransfer/code/platform/apps/bank_router"
+alias board="cd ~/peertransfer/code/platform/apps/peerboard"
+alias platform="cd ~/peertransfer/code/platform"
+alias redisstart='sudo launchctl start io.redis.redis-server'
+alias redisstop='sudo launchctl stop io.redis.redis-server'
+alias goodies="cd ~/peertransfer/code/platform/libs/peertransfer_goodies"
+alias motherme="ssh salva@mother.peertransfer.me"
+alias mothercom="ssh salva@mother.peertransfer.com"
+
+export OPSCODE_USER='salrepe'
+export VAGRANT_ENVIRONMENT='vagrant'
+export OPSCODE_ORGNAME='peertransfer'
+export VAGRANT_HOSTNAME="$OPSCODE_USER-$VAGRANT_ENVIRONMENT"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/usr/local/sbin
+PATH=$PATH:/Users/salva/.rvm/gems/ree-1.8.7-2011.03/gems/rhc-0.92.11/bin
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+export PTCODE=/Volumes/peertransfer/code
+export PATH="$HOME/.rbenv/bin:$PATH"
+source ~/.fresh/build/shell.sh

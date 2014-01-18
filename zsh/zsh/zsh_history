@@ -1,0 +1,89 @@
+cd Desktop
+ls
+switch_prompt
+cd Desktop
+cd ..
+cd peertransfer
+switch_prompt
+ls
+switch_prompt
+ls
+cd Desktop
+ls
+switch_prompt
+ls
+switch_prompt
+ls
+cd ..
+ls
+cd Desktop
+ls
+switch_prompt
+ls
+switch_prompt
+switch_prompt
+switch_prompt
+switch_prompt
+ls
+cd ..
+cd Documents
+ls
+switch_prompt
+switch_prompt
+switch_prompt
+switch_prompt
+ls
+cd ..
+ls
+switch_prompt
+ls
+cd Desktop
+ls
+switch_prompt
+ls
+cd ..
+s
+ls
+switch_prompt
+ls
+switch_prompt
+ls
+cd Desktop
+ls
+cd .
+cd ..
+switch_prompt
+cd ..
+ls
+cd peertransfer
+ls
+cd salva
+ls
+cd peertransfer/peertransfer_core
+ls
+rvim gemset
+cd ..
+ls
+cd ..
+ls
+~/zs
+ls -lha
+~/.zshrc
+sudo vim ~/.zshrc
+ls
+ls -lha
+vim .zshrc
+source .zshrc
+cd peertransfer/peertransfer_core
+ls
+rvm gemset
+rvm gemset list
+exit
+: 1322394515:0;ls
+: 1322394670:0;setenv PROMPT [%n@%m:%c]%#
+: 1322394680:0;setenv PROMPT '[%n@%m:%c]%#'
+: 1322394717:0;[%n@%m:%/]%#
+: 1322394722:0;A '[%n@%m:%/]%#'
+: 1322394919:0;git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+: 1322394969:0;cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+: 1322394975:0;chsh -s /bin/zsh
