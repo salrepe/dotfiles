@@ -1,6 +1,5 @@
 --type-add
 ruby=.haml,.yml,.scss,.coffee
---type-add=json=.json
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=doc
