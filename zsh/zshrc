@@ -55,6 +55,8 @@ alias redisstop='sudo launchctl stop io.redis.redis-server'
 alias goodies="cd ~/peertransfer/code/platform/libs/peertransfer_goodies"
 alias motherme="ssh salva@mother.peertransfer.me"
 alias mothercom="ssh salva@mother.peertransfer.com"
+alias ber="bundle exec rspec"
+alias be="bundle exec"
 
 export OPSCODE_USER='salrepe'
 export VAGRANT_ENVIRONMENT='vagrant'
