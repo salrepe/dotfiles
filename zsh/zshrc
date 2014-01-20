@@ -71,3 +71,4 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PTCODE=/Volumes/peertransfer/code
 export PATH="$HOME/.rbenv/bin:$PATH"
 source ~/.fresh/build/shell.sh
+export EDITOR='vim'
