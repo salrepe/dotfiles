@@ -44,3 +44,34 @@ nnoremap <c-l> <c-w>l
 
 set guifont=Monaco:h13
 set guioptions-=L
+
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+
+  " Required:
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" My Bundles here:
+NeoBundle 'wincent/command-T'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'mileszs/ack.vim'
+
+" You can specify revision/branch/tag.
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
