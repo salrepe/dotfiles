@@ -43,3 +43,5 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 set guifont=Monaco:h13
+
+guioptions-=l
