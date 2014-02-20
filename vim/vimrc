@@ -60,7 +60,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
-NeoBundle 'wincent/command-T'
+NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'kchmck/vim-coffee-script'
