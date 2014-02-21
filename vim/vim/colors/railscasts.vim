@@ -1,4 +1,4 @@
-Vim color scheme
+" Vim color scheme
 "
 " Name:        railscast.vim
 " Maintainer:  Josh O'Rourke <joshorourke@me.com>
@@ -6,7 +6,7 @@ Vim color scheme
 "
 " A GUI Only port of the RailsCasts TextMate theme [1] to Vim.
 " Some parts of this theme were borrowed from the well-documented Lucius
-theme [2].
+" theme [2].
 "
 " [1] http://railscasts.com/about
 " [2] http://www.vim.org/scripts/script.php?script_id=2536
@@ -27,13 +27,10 @@ let g:colors_name = "railscasts"
 " Light Green  #A5C261
 " Tan          #FFC66D
 
-hi Normal                    guifg=#E6E1DC guibg=#2B2B2B ctermfg=white
-ctermbg=234
-hi Cursor                    guifg=#000000 guibg=#FFFFFF ctermfg=0
-ctermbg=15
+hi Normal                    guifg=#E6E1DC guibg=#2B2B2B ctermfg=white ctermbg=234
+hi Cursor                    guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
 hi CursorLine                guibg=#333435 ctermbg=235 cterm=NONE
-hi Search                    guibg=#5A647E ctermfg=NONE ctermbg=236
-cterm=underline
+hi Search                    guibg=#5A647E ctermfg=NONE ctermbg=236 cterm=underline
 hi Visual                    guibg=#5A647E ctermbg=60
 hi LineNr                    guifg=#888888 ctermfg=242
 hi StatusLine                guibg=#414243 gui=NONE guifg=#E6E1DC
@@ -71,8 +68,7 @@ hi PMenuThumb                guibg=#AAAAAA gui=NONE
 
 "rubyComment
 hi Comment                   guifg=#BC9458 gui=italic ctermfg=137
-hi Todo                      guifg=#BC9458 guibg=NONE gui=italic
-ctermfg=94
+hi Todo                      guifg=#BC9458 guibg=NONE gui=italic ctermfg=94
 
 "rubyPseudoVariable
 "nil, self, symbols, etc
@@ -86,8 +82,7 @@ hi Define                    guifg=#CC7833 ctermfg=173
 hi Delimiter                 guifg=#519F50
 
 "rubyError, rubyInvalidVariable
-hi Error                     guifg=#FFFFFF guibg=#990000 ctermfg=221
-ctermbg=88
+hi Error                     guifg=#FFFFFF guibg=#990000 ctermfg=221 ctermbg=88
 
 "rubyFunction
 hi Function                  guifg=#FFC66D gui=NONE ctermfg=221 cterm=NONE
