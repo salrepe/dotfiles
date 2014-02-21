@@ -1,4 +1,5 @@
 set number
+set t_Co=256
 colorscheme railscasts
 
 set nocompatible                " choose no compatibility with legacy vi
