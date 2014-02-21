@@ -51,7 +51,7 @@ if has('vim_starting')
 endif
 
 " Required:
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#rc(expand('~/.vim-bundle/'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -65,9 +65,6 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'tpope/vim-endwise'
 
-" You can specify revision/branch/tag.
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
 " Required:
 filetype plugin indent on
 
@@ -76,3 +73,7 @@ filetype plugin indent on
 NeoBundleCheck
 
 map <leader>f :CtrlP pwd<cr>
+if exists(":Tabularize")
+  nmap <Leader>t= :Tabularize /=<CR>
+  vmap <Leader>t= :Tabularize /=<CR>
+end
