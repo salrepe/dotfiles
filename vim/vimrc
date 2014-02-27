@@ -65,6 +65,7 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'sjl/splice.vim'
 
 " Required:
 filetype plugin indent on
