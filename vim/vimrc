@@ -79,3 +79,5 @@ if exists(":Tabularize")
   nmap <Leader>t= :Tabularize /=<CR>
   vmap <Leader>t= :Tabularize /=<CR>
 end
+
+map <leader>i mmgg=G`m<CR>
