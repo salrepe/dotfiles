@@ -5,6 +5,7 @@ fresh-options --file=~/.zshrc --marker=#
   fresh zsh/\*
   fresh freshshell/fresh contrib/source-build.sh
 fresh-options
+fresh zsh/zsh --file=~/.zsh/
 
 # Config files
 fresh config/\* --file
