@@ -31,28 +31,36 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-alias core="cd ~/peertransfer/code/platform/apps/core"
-alias operations="cd ~/peertransfer/code/platform/apps/operations"
-alias payschool="cd ~/peertransfer/code/platform/apps/payschool"
-alias dashboard="cd ~/peertransfer/code/platform/apps/dashboards"
-alias hedge_oanda="cd ~/peertransfer/code/platform/apps/hedge_oanda"
-alias salesforce="cd ~/peertransfer/code/platform/apps/salesforce"
-alias filer="cd ~/peertransfer/code/platform/apps/filer"
-alias api="cd ~/peertransfer/code/platform/apps/api"
-alias exchange="cd ~/peertransfer/code/platform/apps/exchange"
-alias messages="cd ~/peertransfer/code/platform/apps/messages"
-alias baywatch="cd ~/peertransfer/code/platform/apps/baywatch"
-alias webhook="cd ~/peertransfer/code/platform/apps/webhook"
-alias watchlist="cd ~/peertransfer/code/platform/apps/watchlist_lexisnexis"
-alias lounge="cd ~/peertransfer/code/platform/apps/lounge"
-alias health_manager="cd ~/peertransfer/code/platform/apps/health_manager"
-alias cookbooks="cd ~/peertransfer/code/platform/infra/cookbooks"
-alias bank_router="cd ~/peertransfer/code/platform/apps/bank_router"
-alias board="cd ~/peertransfer/code/platform/apps/peerboard"
-alias platform="cd ~/peertransfer/code/platform"
+aliases() {
+  if [ -d "/home/vagrant/code/platform/$1" ]; then
+    cd "/home/vagrant/code/platform/$1"
+  else
+    cd "/Users/Salrepe/peertransfer/code/platform/$1"
+  fi
+}
+
+alias core='aliases apps/core'
+alias operations='aliases apps/operations'
+alias payschool='aliases apps/payschool'
+alias dashboard='aliases apps/dashboards'
+alias hedge_oanda='aliases apps/hedge_oanda'
+alias salesforce='aliases apps/salesforce'
+alias filer='aliases apps/filer'
+alias api='aliases apps/api'
+alias exchange='aliases apps/exchange'
+alias messages='aliases apps/messages'
+alias baywatch='aliases apps/baywatch'
+alias webhook='aliases apps/webhook'
+alias watchlist='aliases apps/watchlist_lexisnexis'
+alias lounge='aliases apps/lounge'
+alias health_manager='aliases apps/health_manager'
+alias cookbooks='aliases infra/cookbooks'
+alias bank_router='aliases apps/bank_router'
+alias board='aliases apps/peerboard'
+alias platform='aliases'
 alias redisstart='sudo launchctl start io.redis.redis-server'
 alias redisstop='sudo launchctl stop io.redis.redis-server'
-alias goodies="cd ~/peertransfer/code/platform/libs/peertransfer_goodies"
+alias goodies="cd ~/code/platform/libs/peertransfer_goodies"
 alias motherme="ssh salva@mother.peertransfer.me"
 alias mothercom="ssh salva@mother.peertransfer.com"
 alias ber="bundle exec rspec"
@@ -68,7 +76,7 @@ PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/Users/salva/.rvm/gems/ree-1.8.7-2011.03/gems/rhc-0.92.11/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
 
-export PTCODE=/Volumes/peertransfer/code
+export PTCODE=/Volumes/code
 export PATH="$HOME/.rbenv/bin:$PATH"
 source ~/.fresh/build/shell.sh
 export EDITOR='vim'
