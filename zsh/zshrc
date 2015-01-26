@@ -57,6 +57,7 @@ alias health_manager='aliases apps/health_manager'
 alias cookbooks='aliases infra/cookbooks'
 alias bank_router='aliases apps/bank_router'
 alias board='aliases apps/peerboard'
+alias collector='aliases apps/processor_collector'
 alias platform='aliases'
 alias redisstart='sudo launchctl start io.redis.redis-server'
 alias redisstop='sudo launchctl stop io.redis.redis-server'
@@ -87,3 +88,4 @@ function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
+eval "$(rbenv init -)"
