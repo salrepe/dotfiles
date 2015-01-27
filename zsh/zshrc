@@ -59,6 +59,7 @@ alias bank_router='aliases apps/bank_router'
 alias board='aliases apps/peerboard'
 alias collector='aliases apps/processor_collector'
 alias platform='aliases'
+alias infra='aliases infra'
 alias redisstart='sudo launchctl start io.redis.redis-server'
 alias redisstop='sudo launchctl stop io.redis.redis-server'
 alias goodies="cd ~/code/platform/libs/peertransfer_goodies"
