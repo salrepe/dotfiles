@@ -90,3 +90,15 @@ function git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 eval "$(rbenv init -)"
+
+source ~/.fresh/build/shell.sh
+
+reseed() {
+  bundle exec rake app:reseed SEED=$1
+}
+
+rubocopautocorrect() {
+  cd ~/code/platform/
+  rubocop $1 --auto-correct
+  cd -
+}
