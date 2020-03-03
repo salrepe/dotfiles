@@ -1,0 +1,5 @@
+alias b='bundle'
+alias bo='bundle open'
+alias be='bundle exec'
+alias ber='bundle exec rspec'
+alias beh='BUNDLE_GEMFILE=$HOME/Gemfile bundle exec'

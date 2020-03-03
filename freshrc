@@ -6,6 +6,10 @@ fresh-options --file=~/.zshrc --marker=#
   fresh freshshell/fresh contrib/source-build.sh
 fresh-options
 fresh zsh/zsh --file=~/.zsh/
+fresh zsh/aliases --file=~/.aliases/
+
+#Zim
+fresh zim/zimrc --file=~/.zimrc
 
 # Config files
 fresh config/\* --file
