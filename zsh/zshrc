@@ -91,6 +91,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 # Initialize modules
 # ------------------
 
+export ZIM_HOME=~/.zim
+
 if [[ ${ZIM_HOME}/init.zsh -ot ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   # Update static initialization script if it's outdated, before sourcing it
   source ${ZIM_HOME}/zimfw.zsh init -q
@@ -125,21 +127,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 #Load aliases
 for f in ~/.aliases/*; do source $f; done
 
-#OPSCODE config
-
-export OPSCODE_USER='salrepe'
-export VAGRANT_ENVIRONMENT='vagrant'
-export OPSCODE_ORGNAME='peertransfer'
-export VAGRANT_HOSTNAME="$OPSCODE_USER-$VAGRANT_ENVIRONMENT"
-
-#Reseed apps with seeeds
-
-reseed() {
-  bundle exec rake app:reseed SEED=$1
-}
-
 export EDITOR='vim'
-export PT_VM_MEMORY=4096
 
 # fresh: freshshell/fresh contrib/source-build.sh
 
